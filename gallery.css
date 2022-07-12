@@ -6,6 +6,10 @@ body {
  margin: 0;
  padding: 0;
 }
+h1 {
+    margin: 0;
+    /* text-align: center; */
+}
 
 .back {
     height: 5rem;
@@ -26,12 +30,44 @@ body {
     cursor: pointer;
 
 }
-h1 {
-    margin: 0;
-    text-align: center;
-}
+
 .gallery-cont {
-    background-color: lightcyan;
+    background-color: rgb(5,105,105);
     min-height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.media-cont {
+    height: 15rem;
+    width: 15rem;
+    border: 10px solid white;
+    margin: 2rem;
+}
+.media {
+    height: calc(100% - 2rem - 2rem);
+}
+.media > *{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action-btn {
+    height: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download {
+    background-color: black;
+}
+.delete {
+    background: red;
+}
+.action-btn:hover{
+    cursor: pointer;
 }
